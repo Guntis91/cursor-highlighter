@@ -6,15 +6,21 @@
 
 
 
-This is a lightweight Windows cursor highlighter designed for screen recordings, tutorials, and guide videos.
-
-It makes the mouse cursor easier to see by displaying a yellow ring around it and showing a red click animation whenever the left mouse button is pressed.
+Cursor Highlighter is a lightweight Windows overlay tool designed for \*\*screen recordings, tutorials, and guide videos\*\*.
 
 
 
-The app does not automate clicks or change mouse behavior.
+It improves cursor visibility by displaying a \*\*yellow ring\*\* around the mouse pointer and showing a \*\*red click animation\*\* whenever the left mouse button is pressed.
 
-It is only a visual overlay for better visibility in recordings.
+
+
+The application is \*\*visual only\*\*:
+
+\- It does \*\*not\*\* automate clicks
+
+\- It does \*\*not\*\* modify mouse behaviour
+
+\- It is safe to use while recording
 
 
 
@@ -24,15 +30,15 @@ It is only a visual overlay for better visibility in recordings.
 
 
 
-• Always-on-top transparent overlay  
+\- Always-on-top transparent overlay  
 
-• Yellow ring follows the mouse cursor  
+\- Yellow ring follows the mouse cursor  
 
-• Red shrinking circle animation on left click  
+\- Red shrinking circle animation on left click  
 
-• Works across multiple monitors  
+\- Works across multiple monitors  
 
-• Very lightweight and simple to use  
+\- Lightweight and simple to use  
 
 
 
@@ -42,21 +48,23 @@ It is only a visual overlay for better visibility in recordings.
 
 
 
-• Windows 10 or Windows 11  
+\- Windows 10 or Windows 11  
 
-• Python installed on the system  
+\- Python installed on the system  
 
 
 
-Python packages used:
+\### Python Packages Used
 
-• Pillow  
 
-• pyautogui  
 
-• pywin32  
+\- Pillow  
 
-• screeninfo  
+\- pyautogui  
+
+\- pywin32  
+
+\- screeninfo  
 
 
 
@@ -66,59 +74,65 @@ Python packages used:
 
 
 
-The files must stay in this structure for the app to work correctly.
+The files \*\*must remain in this structure\*\* for the application to work correctly.
 
 
 
-cursor-highlighter  
+```text
 
-│  
+cursor-highlighter
 
-├─ cursor\_highlighter.py  
+│
 
-├─ Start\_CursorApp.bat  
+├─ cursor\_highlighter.py
 
-├─ requirements.txt  
+├─ Start\_CursorApp.bat
 
-├─ README.md  
+├─ requirements.txt
 
-│  
+├─ README.md
 
-└─ assets  
+├─ LICENSE
 
-&nbsp;  └─ yellow\_ring\_small.png  
+│
+
+└─ assets
+
+&nbsp;  └─ yellow\_ring\_small.png
+
+```
 
 
 
-
-
-\## How to Install
+\## Installation
 
 
 
-1\. Make sure Python is installed on your system
+1. Make sure Python is installed
 
 2\. Open a terminal or command prompt inside the project folder
 
-3\. Install required packages by running:
+3\. Install required packages:
 
 
+
+Copy code
+
+```bat
 
 pip install -r requirements.txt
 
+```
+
+\## Starting the App (Recommended)
 
 
 
-
-\## How to Start the App (Recommended)
-
-
-
-\### The recommended way to start the app is using the batch file.
+The recommended way to start the application is by using the batch file.
 
 
 
-1\. Double-click Start\_CursorApp.bat
+1. Double-click Start\_CursorApp.bat
 
 2\. The cursor highlighter will start immediately
 
@@ -126,65 +140,64 @@ pip install -r requirements.txt
 
 
 
-This is the same method used by the author.
+This is the same launch method used by the author.
 
 
 
-
-
-Important: Batch File Path Setup
-
-
+\## Important: Batch File Path Setup
 
 The Start\_CursorApp.bat file contains a hard-coded folder path.
 
-You MUST edit this path to match where you place the project on your computer.
+You must edit this path to match where the project is located on your computer.
 
 
 
-Example content of Start\_CursorApp.bat:
+\## Example: Current BAT File Content
 
 
 
-@echo off  
+Copy code
 
-cd /d D:\\CursorApp  
+```bat
 
-python cursor\_highlighter.py  
+@echo off
 
+cd /d D:\\CursorApp
 
+python cursor\_highlighter.py
 
-If your project folder is NOT located at D:\\CursorApp, you must change that line.
+```
 
-
-
-For example, if the project is on your Desktop:
-
-
-
-@echo off  
-
-cd /d C:\\Users\\YourName\\Desktop\\cursor-highlighter  
-
-python cursor\_highlighter.py  
+If your project is not located at D:\\CursorApp, this will not work.
 
 
 
-After saving the file, double-click the BAT file again to start the app.
+\## Example: Desktop Location
 
 
 
+Copy code
+
+```bat
+
+@echo off
+
+cd /d C:\\Users\\YourName\\Desktop\\cursor-highlighter
+
+python cursor\_highlighter.py
+
+```
+
+After editing and saving the file, double-click the BAT file again to start the app.
 
 
-\## How to Close the App
+
+\## Closing the App
 
 
 
-• Press Alt + F4  
-
-• Or close the terminal window started by the BAT file  
-
-
+* Press Alt + F4
+* Or close the terminal window started by the BAT file
 
 
 
@@ -192,25 +205,15 @@ After saving the file, double-click the BAT file again to start the app.
 
 
 
-• The app is intended for tutorials, guides, and presentations
-
-• It does not collect data or interact with other programs
-
-• The overlay is visual only and safe to use during recording
-
-
+* Intended for tutorials, guides, and presentations
+* Visual overlay only, no automation
+* Safe to use during screen recording
 
 
 
 \## License
 
-
-
-This project is released under the MIT License.
+This project is licensed under the MIT License.
 
 You are free to use, modify, and share it.
-
-Cursor Highlighter (Windows)
-
-
 
